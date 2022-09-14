@@ -6,7 +6,7 @@ spec:
   template:
     spec:
       containers:
-        - image: coitlearning/coit-frontend:v1
+        - image: 953533/coit-frontend:v20
           imagePullPolicy: Always                         # 7
           name: coit-frontend
           ports:

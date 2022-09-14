@@ -9,10 +9,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - "frontend.coit.io"
-    secretName: "frontend.coit.io"
+    - "nanik8s.xyz"
+    secretName: "nanik8s.xyz"
   rules:
-  - host: "frontend.coit.io"
+  - host: "nanik8s.xyz"
     http:
       paths:
       - path: /
