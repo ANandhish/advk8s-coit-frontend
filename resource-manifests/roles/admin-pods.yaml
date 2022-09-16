@@ -2,8 +2,8 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   namespace: default
-  name: admin-pods  # DO NOT USE THIS ROLE, IT IS JUST AN EXAMPLE
+  name: admin-pods
 rules:
-- apiGroups: [""]
+- apiGroups: [""] # "" indicates the core API group
   resources: ["pods"]
   verbs: ["*"]
