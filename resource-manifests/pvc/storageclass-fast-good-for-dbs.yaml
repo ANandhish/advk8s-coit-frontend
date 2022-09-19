@@ -2,8 +2,8 @@ apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: fast-good-for-dbs
-provisioner: kubernetes.io/gce-pd
+provisioner: kubernetes.io/aws-ebs
 parameters:
-  type: pd-ssd
+  type: gp2
   fstype: ext4
   replication-type: none

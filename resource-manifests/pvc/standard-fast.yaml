@@ -3,8 +3,8 @@ kind: StorageClass
 metadata:
   name: standard-fast
 parameters:
-  type: pd-ssd
-provisioner: kubernetes.io/gce-pd
+  type: gp2
+provisioner: kubernetes.io/aws-ebs
 reclaimPolicy: Delete
 volumeBindingMode: Immediate
 allowVolumeExpansion: true
