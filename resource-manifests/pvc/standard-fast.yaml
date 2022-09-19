@@ -7,4 +7,4 @@ parameters:
 provisioner: kubernetes.io/aws-ebs
 reclaimPolicy: Delete
 volumeBindingMode: Immediate
-allowVolumeExpansion: false
+allowVolumeExpansion: true
