@@ -22,13 +22,7 @@ spec:
         app.kubernetes.io/name: coit-frontend
     spec:
       serviceAccountName: coit-frontend
-      volumes:
-        - name: nginx-root
-          persistentVolumeClaim:
-            claimName: coit-frontend
-        - name: datastore
-          persistentVolumeClaim:
-            claimName: coit-frontend-fast  
+       
       containers:
         - image: 953533/advk8s-coit-frontend:v1
         # image: coitlearning/coit-frontend:v21
